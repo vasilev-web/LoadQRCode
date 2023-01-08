@@ -1,0 +1,45 @@
+.form-label {
+    color: $gray-600;
+    font-size: 16px;
+    font-family: $font-family-sans-serif;
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.input-field {
+    .form-floating & {
+        border-color: $gray-200;
+
+        &:hover {
+            border-color: $gray-400;
+        }
+    }
+
+    .form--white-fone & {
+        color: #707172;
+    }
+}
+
+.form {
+    &__input {
+        &--range {
+            .form-label {
+                position: absolute;
+                line-height: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                font-size: 14px;
+                font-weight: 100;
+                color: $gray-200;
+                top: 12px;
+            }
+
+            .input-field {
+                padding-left: 30px;
+                font-size: 18px;
+            }
+        }
+    }
+}
